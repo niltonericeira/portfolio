@@ -473,11 +473,11 @@ img {
     position: relative;
     z-index: 2;
 
-    width: min(180px, 100%);
+    width: min(200px, 100%);
     aspect-ratio: 3 / 4;
 
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center top;
 
     border-radius: 20px;
     border: 8px solid #FFFFFF;
