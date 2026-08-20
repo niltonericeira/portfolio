@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Conheça os projetos de Nilton Ericeira, incluindo o HORUS Newsroom e o aplicativo PROSPERA, além de soluções em Broadcast e tecnologia.">
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="canonical" href="https://niltonericeira.github.io/portfolio/projetos.html">
+<title>Projetos | Nilton Ericeira</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Ajustes específicos da página de Projetos */
+.horus-project .project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Moldura de smartphone para as telas do PROSPERA */
+.prospera-project .project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    min-height: 520px;
+}
+
+.phone-frame {
+    position: relative;
+    width: min(250px, 72%);
+    aspect-ratio: 9 / 19.5;
+    padding: 8px;
+    border-radius: 38px;
+    background: #111827;
+    box-shadow: 0 24px 55px rgba(15, 23, 42, .22), inset 0 0 0 2px rgba(255,255,255,.12);
+    overflow: hidden;
+}
+
+.phone-frame::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82px;
+    height: 22px;
+    border-radius: 20px;
+    background: #050505;
+    z-index: 2;
+}
+
+.phone-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 31px;
+    background: #fff;
+}
+
+.prospera-gallery {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: start;
+}
+
+.prospera-gallery .gallery-item {
+    text-align: center;
+}
+
+.prospera-gallery .phone-frame {
+    width: min(180px, 100%);
+    margin: 0 auto;
+    border-radius: 28px;
+    padding: 6px;
+}
+
+.prospera-gallery .phone-frame::before {
+    top: 7px;
+    width: 58px;
+    height: 16px;
+}
+
+.prospera-gallery .phone-frame img {
+    border-radius: 23px;
+}
+
+@media (max-width: 900px) {
+    .prospera-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .prospera-project .project-image {
+        min-height: 420px;
+    }
+
+    .phone-frame {
+        width: 220px;
+    }
+
+    .prospera-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .prospera-gallery .phone-frame {
+        width: 150px;
+    }
+}
+</style>
+
+
+    <meta name="author" content="Nilton Ericeira">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://niltonericeira.github.io/portfolio/projetos.html">
+    <meta property="og:site_name" content="Nilton Ericeira">
+    <meta property="og:title" content="Projetos | Nilton Ericeira">
+    <meta property="og:description" content="Conheça os projetos de Nilton Ericeira, incluindo o HORUS Newsroom e o aplicativo PROSPERA, além de soluções em Broadcast e tecnologia.">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Projetos | Nilton Ericeira">
+    <meta name="twitter:description" content="Conheça os projetos de Nilton Ericeira, incluindo o HORUS Newsroom e o aplicativo PROSPERA, além de soluções em Broadcast e tecnologia.">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Nilton Ericeira">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+</head>
+<body>
+<header class="header"><div class="container nav">
+<a href="index.html" class="brand" aria-label="Nilton Ericeira - Início"><span class="brand-mark">N</span><span class="brand-name">NILTON ERICEIRA</span></a>
+<nav class="menu" aria-label="Navegação principal"><a href="index.html">Início</a><a href="sobre.html">Sobre mim</a><a href="projetos.html" class="active">Projetos</a><a href="habilidades.html">Habilidades</a><a href="contato.html">Contato</a></nav>
+<a href="contato.html" class="nav-button">Vamos conversar</a>
+</div></header>
+<main>
+<section class="hero hero-inner"><div class="container hero-content"><div class="hero-text"><p class="eyebrow">PROJETOS</p><h1>Ideias transformadas <span>em soluções reais.</span></h1><p class="hero-description">Projetos desenvolvidos a partir de necessidades reais, unindo experiência de operação, tecnologia, organização e visão prática.</p></div></div></section>
+<section class="highlights"><div class="container"><div class="section-intro"><p class="eyebrow">DA NECESSIDADE À SOLUÇÃO</p><h2>Tecnologia com propósito.</h2><p>Ao longo da minha trajetória, tecnologia sempre esteve ligada à necessidade de resolver problemas concretos. O HORUS e o PROSPERA representam essa forma de pensar: observar uma necessidade, estruturar uma solução e transformar a ideia em uma ferramenta utilizável.</p></div></div></section>
+<section class="projects-preview"><div class="container">
+<div class="section-heading"><div><p class="eyebrow">SISTEMA DE GESTÃO • HORUS 1.0</p><h2>HORUS Newsroom</h2></div><span class="project-status">EM PRODUÇÃO</span></div>
+<article class="project-feature horus-project"><div class="project-image"><img src="assets/horus/tela00.png" alt="Tela principal do HORUS Newsroom" loading="lazy"></div><div class="project-content"><p class="project-category">GERENCIAMENTO DE PAUTA E PRODUÇÃO</p><h3>Um sistema pensado para a rotina de comunicação.</h3><p>O HORUS é um sistema de gerenciamento de pauta e produção desenvolvido para empresas de televisão, rádio, revistas e jornais.</p><p>A proposta é centralizar informações e organizar etapas do fluxo de produção, oferecendo uma visão mais estruturada das atividades e das demandas editoriais.</p><div class="project-tags"><span>Pautas</span><span>Produção</span><span>Gestão</span><span>Newsroom</span></div></div></article>
+<div class="section-intro project-gallery-intro"><p class="eyebrow">HORUS 1.0</p><h2>Conheça algumas telas do sistema.</h2><p>Uma visão da interface e dos recursos presentes na versão apresentada do HORUS.</p></div>
+<div class="project-gallery">
+<figure class="gallery-item"><img src="assets/horus/tela01.png" alt="HORUS Newsroom — tela 01" loading="lazy"><figcaption>HORUS — Tela 01</figcaption></figure>
+<figure class="gallery-item"><img src="assets/horus/tela02.png" alt="HORUS Newsroom — tela 02" loading="lazy"><figcaption>HORUS — Tela 02</figcaption></figure>
+<figure class="gallery-item"><img src="assets/horus/tela03.png" alt="HORUS Newsroom — tela 03" loading="lazy"><figcaption>HORUS — Tela 03</figcaption></figure>
+<figure class="gallery-item"><img src="assets/horus/tela04.png" alt="HORUS Newsroom — tela 04" loading="lazy"><figcaption>HORUS — Tela 04</figcaption></figure>
+<figure class="gallery-item"><img src="assets/horus/tela05.png" alt="HORUS Newsroom — tela 05" loading="lazy"><figcaption>HORUS — Tela 05</figcaption></figure>
+</div>
+<article class="statement project-future"><div class="statement-box"><span class="quote-mark">2.0</span><p>HORUS 2.0</p><span class="statement-line"></span><small>Nova versão em desenvolvimento. As novas telas serão apresentadas quando o projeto estiver mais avançado.</small></div></article>
+</div></section>
+<section class="projects-preview"><div class="container">
+<div class="section-heading"><div><p class="eyebrow">APLICATIVO • PRODUTO CONCLUÍDO</p><h2>PROSPERA</h2></div><span class="project-status">CONCLUÍDO • PUBLICAÇÃO EM BREVE</span></div>
+<article class="project-feature prospera-project"><div class="project-content"><p class="project-category">GERENCIAMENTO FINANCEIRO • PRODUTO CONCLUÍDO</p><h3>Controle financeiro que transforma números em decisões.</h3><p>O PROSPERA é um aplicativo criado para controle de gastos e gerenciamento financeiro, buscando transformar informações financeiras em uma visão mais simples, organizada e prática.</p><p>O aplicativo está concluído e em fase de preparação para publicação nas lojas de aplicativos. A publicação está prevista para o início do próximo mês.</p><div class="project-tags"><span>Finanças</span><span>Gastos</span><span>Entradas</span><span>Metas</span><span>Relatórios</span></div></div><div class="project-image prospera-image">
+<div class="phone-frame">
+<img src="assets/prospera/dashboard.png" alt="PROSPERA — Dashboard" loading="lazy">
+</div>
+</div></article>
+<div class="section-intro project-gallery-intro"><p class="eyebrow">PROSPERA</p><h2>Uma visão do produto.</h2><p>Algumas das telas do PROSPERA que representam sua organização e seus recursos.</p></div>
+<div class="project-gallery prospera-gallery">
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/dashboard.png" alt="PROSPERA — Dashboard" loading="lazy"></div><figcaption>Dashboard</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/gastos.png" alt="PROSPERA — Gastos" loading="lazy"></div><figcaption>Gastos</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/entradas.png" alt="PROSPERA — Entradas" loading="lazy"></div><figcaption>Entradas</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/metas.png" alt="PROSPERA — Metas" loading="lazy"></div><figcaption>Metas</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/relatorios.png" alt="PROSPERA — Relatórios" loading="lazy"></div><figcaption>Relatórios</figcaption></figure>
+</div></div></section>
+<section class="highlights"><div class="container"><div class="section-intro"><p class="eyebrow">OUTRAS EXPERIÊNCIAS</p><h2>Projetos também acontecem fora do software.</h2><p>Minha experiência profissional inclui projetos e atividades em produção audiovisual, direção de imagens, infraestrutura de broadcast, redes, suporte em TI e modernização tecnológica.</p></div><div class="highlight-grid">
+<article class="highlight-card"><div class="card-icon">TV</div><h3>Produção Audiovisual</h3><p>Participação em produções, transmissões e eventos com atuação em diferentes etapas da operação.</p></article>
+<article class="highlight-card"><div class="card-icon">IP</div><h3>Broadcast &amp; Infraestrutura</h3><p>Experiência com infraestrutura audiovisual, redes, integração de sistemas e tecnologias de produção e transmissão.</p></article>
+<article class="highlight-card"><div class="card-icon">LIVE</div><h3>Direção de Imagens</h3><p>Atuação em eventos culturais e produções ao vivo, coordenando tecnicamente a realização visual.</p></article>
+</div></div></section>
+<section class="statement"><div class="container"><div class="statement-box"><span class="quote-mark">→</span><p>Da necessidade à solução.</p><span class="statement-line"></span><small>Problema → Análise → Planejamento → Desenvolvimento → Solução → Evolução</small></div></div></section>
+<section class="contact-preview"><div class="container"><div class="contact-box"><div><p class="eyebrow">QUER SABER MAIS?</p><h2>Vamos conversar sobre <span>projetos e soluções.</span></h2></div><a href="contato.html" class="button button-light">Entre em contato →</a></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-content"><div><strong>NILTON ERICEIRA</strong><p>Broadcast • Tecnologia • Soluções Digitais</p></div><p>© 2026 — Todos os direitos reservados.</p></div></footer>
+<script src="js/script.js"></script>
+</body></html>
