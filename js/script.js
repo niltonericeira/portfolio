@@ -28,7 +28,7 @@ if (menuToggle && siteMenu) {
     });
 }
 
-const expandableImages = document.querySelectorAll("main img");
+const expandableImages = document.querySelectorAll("main img:not(.no-lightbox)");
 
 if (expandableImages.length > 0) {
     const lightbox = document.createElement("div");

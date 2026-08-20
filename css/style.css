@@ -768,7 +768,7 @@ img {
     margin: 0;
 }
 
-.gallery-item img {
+.gallery-item > img {
     width: 100%;
     height: auto;
 
