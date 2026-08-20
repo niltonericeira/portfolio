@@ -457,15 +457,15 @@ img {
         );
 }
 
-.hero-inner .hero-content {
+.hero-content.has-photo {
     grid-template-columns: 1.5fr 0.5fr;
 }
 
-.hero-inner .hero-visual {
+.hero-content.has-photo .hero-visual {
     min-height: auto;
 }
 
-.hero-inner .hero-visual::before {
+.hero-content.has-photo .hero-visual::before {
     display: none;
 }
 
@@ -1067,7 +1067,8 @@ img {
         display: none;
     }
 
-    .hero-content {
+    .hero-content,
+    .hero-content.has-photo {
         grid-template-columns: 1fr;
 
         padding-top: 120px;
