@@ -1177,6 +1177,14 @@ img {
    ALINHAMENTO DE TEXTOS
 ========================= */
 
+.timeline-item {
+    margin-top: 36px;
+}
+
+.timeline-item:first-child {
+    margin-top: 0;
+}
+
 /* Textos corridos */
 p {
     text-align: justify;

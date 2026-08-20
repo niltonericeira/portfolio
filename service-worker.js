@@ -1,4 +1,4 @@
-const CACHE_NAME = "nilton-portfolio-v12";
+const CACHE_NAME = "nilton-portfolio-v13";
 
 const PRECACHE_URLS = [
     "index.html",
