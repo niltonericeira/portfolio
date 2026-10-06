@@ -49,10 +49,10 @@ for (pageIndex, blocks) in resume.pages.enumerated() {
             }
             top += height + 5
         case "section":
-            top += 10
+            top += 8
             top += draw(block.text.uppercased(), top: top, size: 10, bold: true, color: blue) + 7
         case "heading": top += draw(block.text, top: top, size: 11, bold: true, color: navy) + 3
-        default: top += draw(block.text, top: top, size: 11) + 5
+        default: top += draw(block.text, top: top, size: 11) + 4
         }
         guard top < 785 else { fatalError("Conteúdo excede a página \(pageIndex + 1): \(top)") }
     }

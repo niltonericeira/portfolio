@@ -11,6 +11,10 @@
       },
       {
         "style": "contact",
+        "text": "Radialista — DRT 0001895/MA  •  São José de Ribamar, MA"
+      },
+      {
+        "style": "contact",
         "text": "E-mail: record.play2014@gmail.com  •  Telefone / WhatsApp: (98) 98191-5924"
       },
       {
@@ -59,19 +63,31 @@
       },
       {
         "style": "body",
-        "text": "Cargo atual: Coordenador Técnico e de Operações, desde 2019. Ingresso na emissora em 16 de março de 2015, antes da inauguração, com participação na implantação e evolução tecnológica. Atuação como Supervisor Técnico a partir de 2018."
-      },
-      {
-        "style": "body",
-        "text": "Coordenação técnica e operacional, planejamento, organização de equipes, infraestrutura audiovisual, transmissão, manutenção e modernização tecnológica."
+        "text": "Cargo atual: Coordenador Técnico e de Operações, desde 2019. Ingresso em 16 de março de 2015, antes da inauguração da emissora; Supervisor Técnico a partir de 2018. Coordenação técnica e operacional, equipes, infraestrutura audiovisual, transmissão, manutenção e modernização tecnológica."
       },
       {
         "style": "heading",
-        "text": "TV Guará | Ingresso em 2012"
+        "text": "Faculdade UNIP / IMEC | Julho de 2014 – junho de 2015"
       },
       {
         "style": "body",
-        "text": "Atuação em televisão e produção audiovisual, ampliando a experiência prática em produção e operação."
+        "text": "Técnico em Recursos de Áudio e Vídeo. Operação de equipamentos em estúdio, gravação e edição de spots para rádio e VTs comerciais para televisão."
+      },
+      {
+        "style": "heading",
+        "text": "TV Difusora | Janeiro – junho de 2013"
+      },
+      {
+        "style": "body",
+        "text": "Editor de Imagens em contrato temporário para cobertura de licença-maternidade."
+      },
+      {
+        "style": "heading",
+        "text": "TV Guará | Novembro de 2012 – fevereiro de 2014"
+      },
+      {
+        "style": "body",
+        "text": "Editor de Texto e Imagens, com atuação na edição do jornalismo da emissora."
       },
       {
         "style": "heading",
@@ -79,19 +95,7 @@
       },
       {
         "style": "body",
-        "text": "Início da trajetória profissional em 1º de agosto de 2010, com edição de programas religiosos para televisão."
-      },
-      {
-        "style": "section",
-        "text": "Experiências complementares"
-      },
-      {
-        "style": "body",
-        "text": "Redes e suporte em TI: atuação como técnico na campanha eleitoral de reeleição do Governador do Estado, em 2018."
-      },
-      {
-        "style": "body",
-        "text": "Direção de imagens: participação em eventos culturais e produções ao vivo, com coordenação visual e operação audiovisual."
+        "text": "Início da trajetória profissional em televisão, com edição de programas religiosos."
       }
     ],
     [
@@ -101,23 +105,81 @@
       },
       {
         "style": "subtitle",
-        "text": "COMPETÊNCIAS TÉCNICAS E PROJETOS PRÓPRIOS"
+        "text": "EXPERIÊNCIAS COMPLEMENTARES, COMPETÊNCIAS E CURSOS"
       },
       {
         "style": "section",
-        "text": "Competências"
+        "text": "Experiências complementares"
+      },
+      {
+        "style": "heading",
+        "text": "Interface Broadcasting | 2022"
       },
       {
         "style": "body",
-        "text": "Broadcast e audiovisual: operação e coordenação técnica de TV, direção de imagens, transmissão ao vivo e streaming. Ferramentas e tecnologias: vMix, ATEM, Videohub, SDI, HDMI, NDI, SRT e RTMP; Final Cut Pro, Premiere, Photoshop, Yamaha e Soundcraft."
+        "text": "Técnico em Broadcast em São Luís. Geração de imagens e sons de eventos esportivos, incluindo jogos da Série B do Campeonato Brasileiro, em operações para SporTV, Premiere e TV Globo."
+      },
+      {
+        "style": "heading",
+        "text": "Maranhão Rural — TV Difusora | Início em agosto de 2010"
       },
       {
         "style": "body",
-        "text": "Infraestrutura e operações: redes, servidores, NAS, Windows, macOS, Debian Linux e Docker. Planejamento operacional, coordenação de equipes, especificações técnicas, manutenção preventiva e padronização."
+        "text": "Prestação de serviços como Técnico em Audiovisual, em regime freelancer, no programa Maranhão Rural."
+      },
+      {
+        "style": "heading",
+        "text": "Programa Algo Mais | Outubro de 2017 – 2022"
       },
       {
         "style": "body",
-        "text": "Conhecimentos complementares: Dante em nível básico; After Effects aplicado a projetos e templates existentes. Inteligência artificial como apoio à pesquisa, aprendizado, prototipação e desenvolvimento."
+        "text": "Técnico em TI freelancer, com manutenção de computadores Apple Mac utilizados pelo programa."
+      },
+      {
+        "style": "heading",
+        "text": "Opendoor / Real Time | Agosto – outubro de 2018"
+      },
+      {
+        "style": "body",
+        "text": "Contrato temporário na campanha eleitoral ao governo do Maranhão. Gerenciamento de redes, suporte em TI, operação técnica, logger e reprodução de mídias."
+      },
+      {
+        "style": "body",
+        "text": "Direção de imagens em eventos culturais e produções ao vivo, com coordenação visual e operação audiovisual."
+      },
+      {
+        "style": "section",
+        "text": "Competências técnicas"
+      },
+      {
+        "style": "body",
+        "text": "Broadcast e audiovisual: direção de imagens, operação de câmera, edição de texto e imagens, logger, transmissão ao vivo e streaming. Ferramentas: vMix, OBS, ATEM, Videohub, SDI, HDMI, NDI, SRT e RTMP; Final Cut Pro X, Premiere Pro, Vegas, DaVinci Resolve, Photoshop, Yamaha e Soundcraft."
+      },
+      {
+        "style": "body",
+        "text": "TI e operações: redes, servidores, NAS, Windows, macOS, Debian Linux e Docker; manutenção de ilhas de edição em Windows e Mac, planejamento, coordenação de equipes, especificações técnicas e manutenção preventiva."
+      },
+      {
+        "style": "body",
+        "text": "Conhecimentos complementares: Dante em nível básico; After Effects aplicado a projetos e templates existentes. Inteligência artificial como apoio à pesquisa, aprendizado e desenvolvimento."
+      },
+      {
+        "style": "section",
+        "text": "Cursos e certificados"
+      },
+      {
+        "style": "body",
+        "text": "Edição em Final Cut Pro X — julho de 2015.\nColorista em DaVinci Resolve — julho de 2015.\nIntrodução ao Cinema 4D — julho de 2015.\nTécnico em Informática — outubro de 2005."
+      }
+    ],
+    [
+      {
+        "style": "name",
+        "text": "Nilton Ericeira"
+      },
+      {
+        "style": "subtitle",
+        "text": "SISTEMAS E APLICATIVOS PRÓPRIOS"
       },
       {
         "style": "section",
