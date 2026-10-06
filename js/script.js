@@ -84,7 +84,9 @@ if (expandableImages.length > 0) {
     });
 }
 
-if ("serviceWorker" in navigator) {
+const isLocalDevelopment = ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
+
+if ("serviceWorker" in navigator && !isLocalDevelopment && window.location.protocol !== "file:") {
     window.addEventListener("load", () => {
         navigator.serviceWorker.register("service-worker.js").catch((error) => {
             console.error("Falha ao registrar o service worker:", error);

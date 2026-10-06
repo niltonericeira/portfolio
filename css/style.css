@@ -1290,3 +1290,12 @@ p {
 body.lightbox-open {
     overflow: hidden;
 }
+/* Captura mobile na apresentação do PROSPERA na página inicial. */
+.project-image .project-screen-mobile {
+    width: auto;
+    max-width: 80%;
+    max-height: 480px;
+    margin: 24px 0;
+    border-radius: 24px;
+    object-fit: contain;
+}

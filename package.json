@@ -1,0 +1,13 @@
+{
+  "name": "nilton-ericeira-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio estático de Nilton Ericeira",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

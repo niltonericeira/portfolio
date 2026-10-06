@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Projetos de Nilton Ericeira — HORUS Newsroom, PROSPERA e soluções em Broadcast, Tecnologia e Operações.">
+<meta name="description" content="Projetos de Nilton Ericeira — HORUS Newsroom, PROSPERA, PULSO, Aprovado360 e Zelar — aplicativos e sistemas para finanças, bem-estar, estudos e gestão.">
 <meta name="theme-color" content="#ffffff">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="canonical" href="https://niltonericeira.github.io/portfolio/projetos.html">
@@ -22,8 +22,8 @@
     object-fit: contain;
 }
 
-/* Moldura de smartphone para as telas do PROSPERA */
-.prospera-project .project-image {
+/* Moldura de smartphone para os aplicativos mobile */
+.mobile-project .project-image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,8 +55,10 @@
     z-index: 2;
 }
 
-.phone-frame img {
+.phone-frame img,
+.project-image .phone-frame img {
     width: 100%;
+    max-width: none;
     height: 100%;
     display: block;
     object-fit: cover;
@@ -64,40 +66,40 @@
     background: #fff;
 }
 
-.prospera-gallery {
+.mobile-gallery {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     align-items: start;
 }
 
-.prospera-gallery .gallery-item {
+.mobile-gallery .gallery-item {
     text-align: center;
 }
 
-.prospera-gallery .phone-frame {
+.mobile-gallery .phone-frame {
     width: min(180px, 100%);
     margin: 0 auto;
     border-radius: 28px;
     padding: 6px;
 }
 
-.prospera-gallery .phone-frame::before {
+.mobile-gallery .phone-frame::before {
     top: 7px;
     width: 58px;
     height: 16px;
 }
 
-.prospera-gallery .phone-frame img {
+.mobile-gallery .phone-frame img {
     border-radius: 23px;
 }
 
 @media (max-width: 900px) {
-    .prospera-gallery {
+    .mobile-gallery {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 600px) {
-    .prospera-project .project-image {
+    .mobile-project .project-image {
         min-height: 420px;
     }
 
@@ -105,13 +107,23 @@
         width: 220px;
     }
 
-    .prospera-gallery {
+    .mobile-gallery {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .prospera-gallery .phone-frame {
+    .mobile-gallery .phone-frame {
         width: 150px;
     }
+}
+.mobile-gallery-six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.mobile-gallery-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.project-content .project-technologies { margin-top: 18px; }
+@media (max-width: 900px) {
+    .mobile-gallery-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+    .mobile-gallery-six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mobile-gallery .phone-frame { width: min(150px, 100%); }
 }
 </style>
 
@@ -125,7 +137,7 @@
 </div></header>
 <main>
 <section class="hero hero-inner"><div class="container hero-content"><div class="hero-text"><p class="eyebrow">PROJETOS</p><h1>Ideias transformadas <span>em soluções reais.</span></h1><p class="hero-description">Projetos desenvolvidos a partir de necessidades reais, unindo experiência de operação, tecnologia, organização e visão prática.</p></div></div></section>
-<section class="highlights"><div class="container"><div class="section-intro"><p class="eyebrow">DA NECESSIDADE À SOLUÇÃO</p><h2>Tecnologia com propósito.</h2><p>Ao longo da minha trajetória, tecnologia sempre esteve ligada à necessidade de resolver problemas concretos. O HORUS e o PROSPERA representam essa forma de pensar: observar uma necessidade, estruturar uma solução e transformar a ideia em uma ferramenta utilizável.</p></div></div></section>
+<section class="highlights"><div class="container"><div class="section-intro"><p class="eyebrow">DA NECESSIDADE À SOLUÇÃO</p><h2>Tecnologia com propósito.</h2><p>Ao longo da minha trajetória, tecnologia sempre esteve ligada à necessidade de resolver problemas concretos. HORUS, PROSPERA, PULSO, Aprovado360 e Zelar representam essa forma de pensar: observar uma necessidade, estruturar uma solução e transformar a ideia em uma ferramenta utilizável.</p></div></div></section>
 <section class="projects-preview"><div class="container">
 <div class="section-heading"><div><p class="eyebrow">SISTEMA DE GESTÃO • HORUS 1.0</p><h2>HORUS Newsroom</h2></div><span class="project-status">EM PRODUÇÃO</span></div>
 <article class="project-feature horus-project"><div class="project-image"><img src="assets/horus/tela00.png" alt="Tela principal do HORUS Newsroom" loading="lazy"></div><div class="project-content"><p class="project-category">GERENCIAMENTO DE PAUTA E PRODUÇÃO</p><h3>Um sistema pensado para a rotina de comunicação.</h3><p>O HORUS é um sistema de gerenciamento de pauta e produção desenvolvido para empresas de televisão, rádio, revistas e jornais.</p><p>A proposta é centralizar informações e organizar etapas do fluxo de produção, oferecendo uma visão mais estruturada das atividades e das demandas editoriais.</p><div class="project-tags"><span>Pautas</span><span>Produção</span><span>Gestão</span><span>Newsroom</span></div></div></article>
@@ -141,19 +153,61 @@
 </div></section>
 <section class="projects-preview"><div class="container">
 <div class="section-heading"><div><p class="eyebrow">APLICATIVO • PRODUTO CONCLUÍDO</p><h2>PROSPERA</h2></div><span class="project-status">CONCLUÍDO • PUBLICAÇÃO EM BREVE</span></div>
-<article class="project-feature prospera-project"><div class="project-content"><p class="project-category">GERENCIAMENTO FINANCEIRO • PRODUTO CONCLUÍDO</p><h3>Controle financeiro que transforma números em decisões.</h3><p>O PROSPERA é um aplicativo criado para controle de gastos e gerenciamento financeiro, buscando transformar informações financeiras em uma visão mais simples, organizada e prática.</p><p>O aplicativo está concluído e em fase de preparação para publicação nas lojas de aplicativos. A publicação está prevista para o início do próximo mês.</p><div class="project-tags"><span>Finanças</span><span>Gastos</span><span>Entradas</span><span>Metas</span><span>Relatórios</span></div></div><div class="project-image prospera-image">
+<article class="project-feature prospera-project mobile-project"><div class="project-content"><p class="project-category">GERENCIAMENTO FINANCEIRO • PRODUTO CONCLUÍDO</p><h3>Controle financeiro que transforma números em decisões.</h3><p>O PROSPERA é um aplicativo criado para controle de gastos e gerenciamento financeiro, buscando transformar informações financeiras em uma visão mais simples, organizada e prática.</p><p>O aplicativo está concluído e em fase de preparação para publicação nas lojas de aplicativos. A publicação está prevista para o início do próximo mês.</p><div class="project-tags"><span>Finanças</span><span>Gastos</span><span>Entradas</span><span>Metas</span><span>Relatórios</span></div></div><div class="project-image prospera-image">
 <div class="phone-frame">
-<img src="assets/prospera/dashboard.png" alt="PROSPERA — Dashboard" loading="lazy">
+<img src="assets/Prospera_2/dashboard.PNG" alt="PROSPERA — Dashboard" loading="lazy">
 </div>
 </div></article>
 <div class="section-intro project-gallery-intro"><p class="eyebrow">PROSPERA</p><h2>Uma visão do produto.</h2><p>Algumas das telas do PROSPERA que representam sua organização e seus recursos.</p></div>
-<div class="project-gallery prospera-gallery">
-<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/dashboard.png" alt="PROSPERA — Dashboard" loading="lazy"></div><figcaption>Dashboard</figcaption></figure>
-<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/gastos.png" alt="PROSPERA — Gastos" loading="lazy"></div><figcaption>Gastos</figcaption></figure>
-<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/entradas.png" alt="PROSPERA — Entradas" loading="lazy"></div><figcaption>Entradas</figcaption></figure>
-<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/metas.png" alt="PROSPERA — Metas" loading="lazy"></div><figcaption>Metas</figcaption></figure>
-<figure class="gallery-item"><div class="phone-frame"><img src="assets/prospera/relatórios.png" alt="PROSPERA — Relatórios" loading="lazy"></div><figcaption>Relatórios</figcaption></figure>
+<div class="project-gallery mobile-gallery">
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Prospera_2/dashboard.PNG" alt="PROSPERA — Dashboard" loading="lazy"></div><figcaption>Dashboard</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Prospera_2/gastos.PNG" alt="PROSPERA — Gastos" loading="lazy"></div><figcaption>Gastos</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Prospera_2/entradas.PNG" alt="PROSPERA — Entradas" loading="lazy"></div><figcaption>Entradas</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Prospera_2/metas.PNG" alt="PROSPERA — Metas" loading="lazy"></div><figcaption>Metas</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Prospera_2/relato%CC%81rios.PNG" alt="PROSPERA — Relatórios" loading="lazy"></div><figcaption>Relatórios</figcaption></figure>
 </div></div></section>
+<section class="projects-preview" id="pulso"><div class="container">
+<div class="section-heading"><div><p class="eyebrow">APLICATIVO MOBILE • ORGANIZAÇÃO E BEM-ESTAR</p><h2>PULSO</h2></div></div>
+<article class="project-feature mobile-project"><div class="project-image"><div class="phone-frame"><img src="assets/Pulso/IMG_8020.PNG" alt="PULSO — visão geral" loading="lazy"></div></div><div class="project-content"><p class="project-category">APLICATIVO MOBILE • ORGANIZAÇÃO E BEM-ESTAR</p><h3>Seu dia a dia em equilíbrio.</h3><p>Desenvolvi o PULSO para reunir rotina, compromissos, alimentação, treinos e objetivos em um só lugar. O aplicativo une organização pessoal e bem-estar em uma experiência intuitiva, com visual agradável e recursos práticos para acompanhar o dia a dia.</p><p>A solução inclui agenda, planejamento de refeições, registro nutricional, fichas de treino, metas pessoais e acompanhamento de peso e medidas. A persistência de dados e o backup local ajudam a manter as informações organizadas.</p><p>O objetivo é facilitar o acompanhamento de hábitos, conectar produtividade e saúde e apoiar uma rotina com mais qualidade de vida.</p><p class="project-technologies"><strong>Tecnologias:</strong> Flutter e Dart.</p><div class="project-tags"><span>Agenda</span><span>Nutrição</span><span>Treinos</span><span>Metas</span><span>Backup local</span></div></div></article>
+<div class="section-intro project-gallery-intro"><p class="eyebrow">PULSO</p><h2>Uma rotina conectada.</h2><p>Conheça as telas de organização pessoal, alimentação e treino. Clique nas imagens para ampliar.</p></div><div class="project-gallery mobile-gallery mobile-gallery-six">
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Pulso/IMG_8020.PNG" alt="PULSO — Visão do dia" loading="lazy"></div><figcaption>Visão do dia</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Pulso/IMG_8021.PNG" alt="PULSO — Progresso da semana" loading="lazy"></div><figcaption>Progresso da semana</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Pulso/IMG_8022.PNG" alt="PULSO — Agenda" loading="lazy"></div><figcaption>Agenda</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Pulso/IMG_8023.PNG" alt="PULSO — Dieta e nutrição" loading="lazy"></div><figcaption>Dieta e nutrição</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Pulso/IMG_8024.PNG" alt="PULSO — Treinos" loading="lazy"></div><figcaption>Treinos</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Pulso/IMG_8025.PNG" alt="PULSO — Metas e ferramentas" loading="lazy"></div><figcaption>Metas e ferramentas</figcaption></figure>
+</div>
+</div></section>
+<section class="projects-preview" id="aprovado360"><div class="container">
+<div class="section-heading"><div><p class="eyebrow">APLICATIVO • GESTÃO DE ESTUDOS</p><h2>Aprovado360</h2></div></div>
+<article class="project-feature"><div class="project-image"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.10.52.png" alt="Aprovado360 — visão geral" loading="lazy"></div><div class="project-content"><p class="project-category">APLICATIVO • GESTÃO DE ESTUDOS</p><h3>Planejamento e constância para ir mais longe.</h3><p>Desenvolvi o Aprovado360 para organizar a preparação para concursos e acompanhar a evolução nos estudos. O aplicativo reúne planejamento diário e semanal, matérias e progresso do edital, cronômetro com Pomodoro, registro de questões, caderno de erros e flashcards com repetição espaçada.</p><p>O dashboard apresenta indicadores de desempenho e prioridades de revisão, ajudando o estudante a direcionar seus esforços e manter a constância.</p><p>Criado para iOS, Android e macOS, funciona offline, com armazenamento local e backup dos dados. A versão desktop conta com interface própria, temas claro e escuro e atalhos de teclado.</p><p class="project-technologies"><strong>Tecnologias:</strong> React Native, Expo, TypeScript, Expo Router, Zustand, SQLite, Drizzle ORM e Electron.</p><div class="project-tags"><span>iOS</span><span>Android</span><span>macOS</span><span>Pomodoro</span><span>Flashcards</span><span>Offline</span></div></div></article>
+<div class="section-intro project-gallery-intro"><p class="eyebrow">APROVADO360 • DESKTOP</p><h2>Seu centro de estudos no computador.</h2><p>Planejamento, matérias e revisão em uma interface pensada para macOS. Clique nas imagens para ampliar.</p></div><div class="project-gallery">
+<figure class="gallery-item"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.10.52.png" alt="Aprovado360 — Dashboard no macOS" loading="lazy"><figcaption>Dashboard no macOS</figcaption></figure>
+<figure class="gallery-item"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.10.55.png" alt="Aprovado360 — Navegação no desktop" loading="lazy"><figcaption>Navegação no desktop</figcaption></figure>
+<figure class="gallery-item"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.11.13.png" alt="Aprovado360 — Cronômetro e Pomodoro" loading="lazy"><figcaption>Cronômetro e Pomodoro</figcaption></figure>
+<figure class="gallery-item"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.11.27.png" alt="Aprovado360 — Matérias e edital" loading="lazy"><figcaption>Matérias e edital</figcaption></figure>
+<figure class="gallery-item"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.12.07.png" alt="Aprovado360 — Cadastro de matéria" loading="lazy"><figcaption>Cadastro de matéria</figcaption></figure>
+<figure class="gallery-item"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.12.18.png" alt="Aprovado360 — Cronograma semanal" loading="lazy"><figcaption>Cronograma semanal</figcaption></figure>
+<figure class="gallery-item"><img src="assets/Aprovado360/desktop%202026-10-06%20a%CC%80s%2010.12.39.png" alt="Aprovado360 — Flashcards" loading="lazy"><figcaption>Flashcards</figcaption></figure>
+</div><div class="section-intro project-gallery-intro"><p class="eyebrow">APROVADO360 • MOBILE</p><h2>Os estudos acompanham você.</h2><p>Uma visão da navegação, da rotina e dos indicadores na versão mobile.</p></div><div class="project-gallery mobile-gallery mobile-gallery-four">
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Aprovado360/movel_8016.PNG" alt="Aprovado360 — Dashboard mobile" loading="lazy"></div><figcaption>Dashboard mobile</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Aprovado360/movel_8017.PNG" alt="Aprovado360 — Rotina de estudos" loading="lazy"></div><figcaption>Rotina de estudos</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Aprovado360/movel_8018.PNG" alt="Aprovado360 — Menu de navegação" loading="lazy"></div><figcaption>Menu de navegação</figcaption></figure>
+<figure class="gallery-item"><div class="phone-frame"><img src="assets/Aprovado360/movel_8019.PNG" alt="Aprovado360 — Desempenho e revisões" loading="lazy"></div><figcaption>Desempenho e revisões</figcaption></figure>
+</div>
+</div></section>
+<section class="projects-preview" id="zelar"><div class="container">
+<div class="section-heading"><div><p class="eyebrow">SISTEMA WEB • GESTÃO DE IGREJAS</p><h2>Zelar</h2></div></div>
+<article class="project-feature"><div class="project-image"><img src="assets/zelar-gestao-de-igrejas/Painel%202026-10-06%20a%CC%80s%2015.13.40.png" alt="Zelar — visão geral" loading="lazy"></div><div class="project-content"><p class="project-category">SISTEMA WEB • GESTÃO DE IGREJAS</p><h3>Mais organização para cuidar das pessoas.</h3><p>Desenvolvi o Zelar para centralizar a administração de igrejas, reunindo cadastro de membros, organização de células, agenda, registros de batismos, emissão de credenciais e certificados, controle financeiro e relatórios.</p><p>O sistema permite gerenciar várias igrejas e congregações, com perfis de acesso por função, autenticação em dois fatores e histórico de alterações. A interface responsiva facilita o uso em computadores e celulares, com instalação como aplicativo via PWA.</p><p>O objetivo é simplificar as rotinas administrativas e oferecer mais organização para que líderes e equipes possam dedicar mais tempo ao cuidado com as pessoas.</p><p class="project-technologies"><strong>Tecnologias:</strong> Python, Django, PostgreSQL, HTML, CSS e JavaScript.</p><div class="project-tags"><span>Membros</span><span>Células</span><span>Finanças</span><span>Congregações</span><span>PWA</span><span>Autenticação em dois fatores</span></div></div></article>
+<div class="section-intro project-gallery-intro"><p class="eyebrow">ZELAR</p><h2>A gestão reunida em um só lugar.</h2><p>Conheça algumas das telas usadas nas rotinas administrativas da igreja. Clique nas imagens para ampliar.</p></div><div class="project-gallery">
+<figure class="gallery-item"><img src="assets/zelar-gestao-de-igrejas/Painel%202026-10-06%20a%CC%80s%2015.13.40.png" alt="Zelar — Painel de gestão" loading="lazy"><figcaption>Painel de gestão</figcaption></figure>
+<figure class="gallery-item"><img src="assets/zelar-gestao-de-igrejas/agenda%202026-10-06%20a%CC%80s%2015.14.17.png" alt="Zelar — Agenda" loading="lazy"><figcaption>Agenda</figcaption></figure>
+<figure class="gallery-item"><img src="assets/zelar-gestao-de-igrejas/membros%202026-10-06%20a%CC%80s%2015.14.55.png" alt="Zelar — Cadastro de membros" loading="lazy"><figcaption>Cadastro de membros</figcaption></figure>
+<figure class="gallery-item"><img src="assets/zelar-gestao-de-igrejas/celulas%202026-10-06%20a%CC%80s%2015.14.31.png" alt="Zelar — Grupos e células" loading="lazy"><figcaption>Grupos e células</figcaption></figure>
+<figure class="gallery-item"><img src="assets/zelar-gestao-de-igrejas/batismo%202026-10-06%20a%CC%80s%2015.15.01.png" alt="Zelar — Registros de batismos" loading="lazy"><figcaption>Registros de batismos</figcaption></figure>
+<figure class="gallery-item"><img src="assets/zelar-gestao-de-igrejas/finalnceiro%202026-10-06%20a%CC%80s%2015.15.22.png" alt="Zelar — Controle financeiro" loading="lazy"><figcaption>Controle financeiro</figcaption></figure>
+</div>
+</div></section>
 <section class="highlights"><div class="container"><div class="section-intro"><p class="eyebrow">OUTRAS EXPERIÊNCIAS</p><h2>Projetos também acontecem fora do software.</h2><p>Minha experiência profissional inclui projetos e atividades em produção audiovisual, direção de imagens, infraestrutura de broadcast, redes, suporte em TI e modernização tecnológica.</p></div><div class="highlight-grid">
 <article class="highlight-card"><div class="card-icon">TV</div><h3>Produção Audiovisual</h3><p>Participação em produções, transmissões e eventos com atuação em diferentes etapas da operação.</p></article>
 <article class="highlight-card"><div class="card-icon">IP</div><h3>Broadcast &amp; Infraestrutura</h3><p>Experiência com infraestrutura audiovisual, redes, integração de sistemas e tecnologias de produção e transmissão.</p></article>
