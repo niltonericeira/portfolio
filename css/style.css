@@ -1233,7 +1233,7 @@ p {
     align-items: center;
     justify-content: center;
 
-    padding: 40px;
+    padding: 80px 88px;
 
     background: rgba(7, 26, 65, 0.92);
 
@@ -1310,4 +1310,44 @@ body.lightbox-open {
 }
 @media (min-width: 951px) {
     .menu { gap: 24px; }
+}
+
+/* Navegação entre as telas do projeto no visualizador. */
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    font-size: 40px;
+    line-height: 1;
+    cursor: pointer;
+}
+.lightbox-arrow[hidden] { display: none; }
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+.lightbox-arrow:hover { background: rgba(255, 255, 255, 0.28); }
+.lightbox-arrow:focus-visible,
+.lightbox-close:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+.lightbox-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+    right: 24px;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}
+@media (max-width: 600px) {
+    .lightbox { padding: 76px 52px 90px; }
+    .lightbox-arrow { width: 40px; height: 44px; }
+    .lightbox-prev { left: 6px; }
+    .lightbox-next { right: 6px; }
 }
