@@ -1,0 +1,168 @@
+{
+  "pages": [
+    [
+      {
+        "style": "name",
+        "text": "Nilton Ericeira"
+      },
+      {
+        "style": "subtitle",
+        "text": "COORDENAÇÃO TÉCNICA E DE OPERAÇÕES | BROADCAST | TECNOLOGIA"
+      },
+      {
+        "style": "contact",
+        "text": "E-mail: record.play2014@gmail.com  •  Telefone / WhatsApp: (98) 98191-5924"
+      },
+      {
+        "style": "contact",
+        "text": "Portfólio: https://niltonericeira.github.io/portfolio/"
+      },
+      {
+        "style": "contact",
+        "text": "LinkedIn: https://www.linkedin.com/in/nilton-ericeira-2a765768/"
+      },
+      {
+        "style": "section",
+        "text": "Perfil profissional"
+      },
+      {
+        "style": "body",
+        "text": "Profissional com mais de 16 anos de experiência em televisão e produção audiovisual. Trajetória construída da edição à supervisão técnica e coordenação de operações, com atuação em broadcast, infraestrutura, redes, suporte em TI e direção de imagens. Desenvolve sistemas web e aplicativos próprios para resolver necessidades de produção, finanças, organização pessoal, estudos e gestão."
+      },
+      {
+        "style": "section",
+        "text": "Formação acadêmica"
+      },
+      {
+        "style": "heading",
+        "text": "Comunicação Social com habilitação em Rádio e TV"
+      },
+      {
+        "style": "body",
+        "text": "Universidade Federal do Maranhão — UFMA."
+      },
+      {
+        "style": "heading",
+        "text": "Inteligência Artificial e Machine Learning"
+      },
+      {
+        "style": "body",
+        "text": "Graduação em andamento — UNIASSELVI."
+      },
+      {
+        "style": "section",
+        "text": "Experiência profissional"
+      },
+      {
+        "style": "heading",
+        "text": "TV UFMA | Desde março de 2015"
+      },
+      {
+        "style": "body",
+        "text": "Ingresso em 16 de março de 2015, antes da inauguração da emissora, com participação na implantação e evolução tecnológica. Atuação em infraestrutura, suporte e operação; Supervisor Técnico a partir de 2018 e Coordenador Técnico e de Operações a partir de 2019."
+      },
+      {
+        "style": "body",
+        "text": "Coordenação técnica e operacional, planejamento, organização de equipes, infraestrutura audiovisual, transmissão, manutenção e modernização tecnológica."
+      },
+      {
+        "style": "heading",
+        "text": "TV Guará | Ingresso em 2012"
+      },
+      {
+        "style": "body",
+        "text": "Atuação em televisão e produção audiovisual, ampliando a experiência prática em produção e operação."
+      },
+      {
+        "style": "heading",
+        "text": "TV Atenas | Início em agosto de 2010"
+      },
+      {
+        "style": "body",
+        "text": "Início da trajetória profissional em 1º de agosto de 2010, com edição de programas religiosos para televisão."
+      },
+      {
+        "style": "section",
+        "text": "Experiências complementares"
+      },
+      {
+        "style": "body",
+        "text": "Redes e suporte em TI: atuação como técnico na campanha eleitoral de reeleição do Governador do Estado, em 2018."
+      },
+      {
+        "style": "body",
+        "text": "Direção de imagens: participação em eventos culturais e produções ao vivo, com coordenação visual e operação audiovisual."
+      }
+    ],
+    [
+      {
+        "style": "name",
+        "text": "Nilton Ericeira"
+      },
+      {
+        "style": "subtitle",
+        "text": "COMPETÊNCIAS TÉCNICAS E PROJETOS PRÓPRIOS"
+      },
+      {
+        "style": "section",
+        "text": "Competências"
+      },
+      {
+        "style": "body",
+        "text": "Broadcast e audiovisual: operação e coordenação técnica de TV, direção de imagens, transmissão ao vivo e streaming. Ferramentas e tecnologias: vMix, ATEM, Videohub, SDI, HDMI, NDI, SRT e RTMP; Final Cut Pro, Premiere, Photoshop, Yamaha e Soundcraft."
+      },
+      {
+        "style": "body",
+        "text": "Infraestrutura e operações: redes, servidores, NAS, Windows, macOS, Debian Linux e Docker. Planejamento operacional, coordenação de equipes, especificações técnicas, manutenção preventiva e padronização."
+      },
+      {
+        "style": "body",
+        "text": "Conhecimentos complementares: Dante em nível básico; After Effects aplicado a projetos e templates existentes. Inteligência artificial como apoio à pesquisa, aprendizado, prototipação e desenvolvimento."
+      },
+      {
+        "style": "section",
+        "text": "Projetos de desenvolvimento"
+      },
+      {
+        "style": "heading",
+        "text": "HORUS Newsroom | Gestão de pauta e produção"
+      },
+      {
+        "style": "body",
+        "text": "Sistema para organizar pautas, informações e etapas do fluxo de produção de televisão, rádio, revistas e jornais. HORUS 1.0 em produção; versão 2.0 em desenvolvimento."
+      },
+      {
+        "style": "heading",
+        "text": "PROSPERA | Gestão financeira"
+      },
+      {
+        "style": "body",
+        "text": "Aplicativo de controle financeiro, com registro de gastos e entradas, metas, dashboard e relatórios. Produto concluído e em preparação para publicação."
+      },
+      {
+        "style": "heading",
+        "text": "PULSO | Organização pessoal e bem-estar"
+      },
+      {
+        "style": "body",
+        "text": "Aplicativo mobile que reúne agenda, alimentação, registro nutricional, treinos, metas e evolução de peso e medidas, com persistência de dados e backup local. Tecnologias: Flutter e Dart."
+      },
+      {
+        "style": "heading",
+        "text": "Aprovado360 | Organização e acompanhamento de estudos"
+      },
+      {
+        "style": "body",
+        "text": "Aplicativo para iOS, Android e macOS, com planejamento, progresso do edital, Pomodoro, questões, caderno de erros, flashcards e dashboard. Funciona offline, com armazenamento local e backup. Tecnologias: React Native, Expo, TypeScript, Expo Router, Zustand, SQLite, Drizzle ORM e Electron."
+      },
+      {
+        "style": "heading",
+        "text": "Zelar | Gestão de igrejas"
+      },
+      {
+        "style": "body",
+        "text": "Sistema web para membros, células, agenda, batismos, credenciais, certificados, finanças e relatórios. Gestão de igrejas e congregações com perfis de acesso, autenticação em dois fatores, histórico de alterações e PWA. Tecnologias: Python, Django, PostgreSQL, HTML, CSS e JavaScript."
+      }
+    ]
+  ]
+}

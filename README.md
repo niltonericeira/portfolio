@@ -32,3 +32,13 @@ O site continua compatível com GitHub Pages: os arquivos HTML, CSS, JavaScript 
 ## Auditoria da migração
 
 Verificação em 6 de outubro de 2026: máquina ARM64, Node.js 24.21.0 e npm 11.19.0 disponíveis. O projeto não contém módulos nativos, binários Intel, caminhos do iMac ou dependências npm. Os canais de contato usam links para e-mail, WhatsApp e LinkedIn; não há backend de formulário. Links externos de contato precisam de internet.
+
+## Atualizar o currículo
+
+O PDF está em `assets/documentos/curriculo-nilton-ericeira.pdf`. Edite os textos em `scripts/curriculo.json` e gere novamente no macOS com Swift:
+
+```sh
+swift -module-cache-path /tmp/portfolio-swift-cache scripts/gerar-curriculo.swift
+```
+
+O site publica o PDF diretamente; o gerador é usado apenas para atualizar o documento.

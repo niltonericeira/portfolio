@@ -1,4 +1,4 @@
-const CACHE_NAME = "nilton-portfolio-v17";
+const CACHE_NAME = "nilton-portfolio-v19";
 
 const PRECACHE_URLS = [
     "index.html",
@@ -10,6 +10,7 @@ const PRECACHE_URLS = [
     "js/script.js",
     "manifest.webmanifest",
     "assets/favicon.svg",
+    "assets/documentos/curriculo-nilton-ericeira.pdf",
     "assets/icons/icon-192.png",
     "assets/icons/icon-512.png",
     "assets/icons/icon-maskable-512.png",
