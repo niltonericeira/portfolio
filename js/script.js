@@ -3,6 +3,60 @@ console.log("Portfólio carregado com sucesso.");
 const menuToggle = document.querySelector(".menu-toggle");
 const siteMenu = document.querySelector(".menu");
 
+document.querySelectorAll(".project-gallery").forEach((gallery) => {
+    const items = Array.from(gallery.querySelectorAll(".gallery-item"));
+    if (items.length < 2) return;
+
+    const carousel = document.createElement("div");
+    carousel.className = "gallery-carousel";
+    carousel.setAttribute("role", "region");
+    carousel.setAttribute("aria-label", "Galeria de imagens do projeto");
+
+    gallery.parentNode.insertBefore(carousel, gallery);
+    carousel.appendChild(gallery);
+
+    const controls = document.createElement("div");
+    controls.className = "gallery-controls";
+    controls.innerHTML =
+        '<button class="gallery-control gallery-prev" type="button" aria-label="Imagem anterior">&#8249;</button>' +
+        '<button class="gallery-control gallery-next" type="button" aria-label="Próxima imagem">&#8250;</button>';
+    carousel.appendChild(controls);
+
+    const previous = controls.querySelector(".gallery-prev");
+    const next = controls.querySelector(".gallery-next");
+    gallery.setAttribute("tabindex", "0");
+    gallery.setAttribute("aria-label", "Imagens do projeto");
+
+    items.forEach((item, index) => {
+        item.setAttribute("role", "group");
+        item.setAttribute("aria-roledescription", "slide");
+        item.setAttribute("aria-label", `${index + 1} de ${items.length}`);
+    });
+
+    const updateControls = () => {
+        const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+        const startOffset = parseFloat(getComputedStyle(gallery).paddingLeft) || 0;
+        previous.disabled = gallery.scrollLeft <= startOffset + 1;
+        next.disabled = gallery.scrollLeft >= maxScroll - 1;
+    };
+
+    const move = (direction) => {
+        const item = items[0];
+        const styles = getComputedStyle(gallery);
+        const gap = parseFloat(styles.columnGap) || parseFloat(styles.gap) || 0;
+        gallery.scrollBy({
+            left: direction * (item.getBoundingClientRect().width + gap),
+            behavior: "smooth",
+        });
+    };
+
+    previous.addEventListener("click", () => move(-1));
+    next.addEventListener("click", () => move(1));
+    gallery.addEventListener("scroll", updateControls, { passive: true });
+    window.addEventListener("resize", updateControls);
+    updateControls();
+});
+
 if (menuToggle && siteMenu) {
     const closeMenu = () => {
         siteMenu.classList.remove("is-open");
