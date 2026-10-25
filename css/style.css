@@ -1511,6 +1511,9 @@ body.lightbox-open {
     width: min(100%, 1000px);
     min-height: 0;
     margin: 42px auto 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    background: #f4f5f7;
     overflow: hidden;
 }
 
@@ -1529,7 +1532,7 @@ body.lightbox-open {
 .site-page .visual-card img {
     width: 100%;
     max-width: none;
-    filter: brightness(1.3) saturate(1.15);
+    filter: none;
 }
 
 .site-page .highlights {
@@ -1698,11 +1701,18 @@ body.lightbox-open {
 }
 
 .site-page .horus-project .project-image {
-    background: #070b14;
+    background: #f4f5f7;
 }
 
 .site-page .project-image img {
-    filter: brightness(1.3) saturate(1.15);
+    filter: none;
+}
+
+.site-page .horus-project .project-image img {
+    width: 94%;
+    max-width: none;
+    border-radius: 12px;
+    box-shadow: 0 16px 36px rgba(29, 29, 31, 0.12);
 }
 
 .site-page .project-content {
