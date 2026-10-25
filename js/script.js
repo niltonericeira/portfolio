@@ -40,6 +40,25 @@ document.querySelectorAll(".project-gallery").forEach((gallery) => {
         next.disabled = gallery.scrollLeft >= maxScroll - 1;
     };
 
+    const updateActiveItem = () => {
+        const galleryCenter = gallery.getBoundingClientRect().left + gallery.clientWidth / 2;
+        let activeItem = items[0];
+        let closestDistance = Infinity;
+
+        items.forEach((item) => {
+            const itemRect = item.getBoundingClientRect();
+            const distance = Math.abs(itemRect.left + itemRect.width / 2 - galleryCenter);
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                activeItem = item;
+            }
+        });
+
+        items.forEach((item) => {
+            item.classList.toggle("is-active", item === activeItem);
+        });
+    };
+
     const move = (direction) => {
         const item = items[0];
         const styles = getComputedStyle(gallery);
@@ -52,9 +71,16 @@ document.querySelectorAll(".project-gallery").forEach((gallery) => {
 
     previous.addEventListener("click", () => move(-1));
     next.addEventListener("click", () => move(1));
-    gallery.addEventListener("scroll", updateControls, { passive: true });
-    window.addEventListener("resize", updateControls);
+    gallery.addEventListener("scroll", () => {
+        updateControls();
+        updateActiveItem();
+    }, { passive: true });
+    window.addEventListener("resize", () => {
+        updateControls();
+        updateActiveItem();
+    });
     updateControls();
+    updateActiveItem();
 });
 
 if (menuToggle && siteMenu) {

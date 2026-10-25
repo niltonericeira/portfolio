@@ -846,7 +846,18 @@ img {
 .site-page .gallery-item {
     flex: 0 0 min(58vw, 820px);
     min-width: 0;
+    position: relative;
     scroll-snap-align: start;
+    transform: scale(0.95);
+    transform-origin: center;
+    opacity: 0.72;
+    transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1), opacity 650ms ease;
+}
+
+.site-page .gallery-item.is-active {
+    z-index: 1;
+    transform: scale(1.035);
+    opacity: 1;
 }
 
 .site-page .gallery-item > img {
@@ -2011,6 +2022,11 @@ body.lightbox-open {
 
     .site-page .gallery-item {
         flex-basis: 88vw;
+        transform: scale(0.96);
+    }
+
+    .site-page .gallery-item.is-active {
+        transform: scale(1.02);
     }
 
     .site-page .gallery-item > img {
@@ -2041,6 +2057,14 @@ body.lightbox-open {
 
     .site-page .footer-content {
         gap: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-page .gallery-item {
+        transition: none;
+        transform: none;
+        opacity: 1;
     }
 }
 
