@@ -1640,10 +1640,25 @@ body.lightbox-open {
 }
 
 .site-page .statement-box p {
+    max-width: 760px;
+    margin: 0 auto;
     color: #1d1d1f;
     font-size: clamp(38px, 6vw, 72px);
     font-weight: 650;
     letter-spacing: -0.06em;
+    text-align: center;
+    text-align-last: center;
+    text-wrap: balance;
+}
+
+.site-page .statement-box small {
+    display: block;
+    max-width: 620px;
+    margin: 18px auto 0;
+    color: #6e6e73;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .site-page .projects-preview {
