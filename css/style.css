@@ -2071,7 +2071,9 @@ body.lightbox-open {
 
     .site-page .gallery-item,
     .site-page .gallery-item > img,
-    .site-page .mobile-gallery .phone-frame {
+    .site-page .mobile-gallery .phone-frame,
+    .site-page .gallery-item.is-active > img,
+    .site-page .gallery-item.is-active .phone-frame {
         transition: none;
         transform: none;
         opacity: 1;
