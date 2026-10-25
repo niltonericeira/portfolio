@@ -24,6 +24,8 @@ document.querySelectorAll(".project-gallery").forEach((gallery) => {
 
     const previous = controls.querySelector(".gallery-prev");
     const next = controls.querySelector(".gallery-next");
+    let activeIndex = 0;
+    let scrollEndTimer;
     gallery.setAttribute("tabindex", "0");
     gallery.setAttribute("aria-label", "Imagens do projeto");
 
@@ -40,41 +42,52 @@ document.querySelectorAll(".project-gallery").forEach((gallery) => {
         next.disabled = gallery.scrollLeft >= maxScroll - 1;
     };
 
+    const setActiveItem = (index) => {
+        activeIndex = index;
+        items.forEach((item, itemIndex) => {
+            item.classList.toggle("is-active", itemIndex === activeIndex);
+        });
+    };
+
     const updateActiveItem = () => {
         const galleryCenter = gallery.getBoundingClientRect().left + gallery.clientWidth / 2;
-        let activeItem = items[0];
+        let closestIndex = 0;
         let closestDistance = Infinity;
 
-        items.forEach((item) => {
+        items.forEach((item, index) => {
             const itemRect = item.getBoundingClientRect();
             const distance = Math.abs(itemRect.left + itemRect.width / 2 - galleryCenter);
             if (distance < closestDistance) {
                 closestDistance = distance;
-                activeItem = item;
+                closestIndex = index;
             }
         });
 
-        items.forEach((item) => {
-            item.classList.toggle("is-active", item === activeItem);
-        });
+        setActiveItem(closestIndex);
     };
 
     const move = (direction) => {
-        const item = items[0];
-        const styles = getComputedStyle(gallery);
-        const gap = parseFloat(styles.columnGap) || parseFloat(styles.gap) || 0;
-        gallery.scrollBy({
-            left: direction * (item.getBoundingClientRect().width + gap),
-            behavior: "smooth",
-        });
+        const nextIndex = Math.max(0, Math.min(items.length - 1, activeIndex + direction));
+        if (nextIndex === activeIndex) return;
+
+        const distance = items[nextIndex].offsetLeft - items[activeIndex].offsetLeft;
+        const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+        const target = Math.max(0, Math.min(maxScroll, gallery.scrollLeft + distance));
+        setActiveItem(nextIndex);
+        gallery.scrollTo({ left: target, behavior: "smooth" });
     };
 
     previous.addEventListener("click", () => move(-1));
     next.addEventListener("click", () => move(1));
     gallery.addEventListener("scroll", () => {
         updateControls();
-        updateActiveItem();
+        clearTimeout(scrollEndTimer);
+        scrollEndTimer = setTimeout(updateActiveItem, 140);
     }, { passive: true });
+    gallery.addEventListener("scrollend", () => {
+        clearTimeout(scrollEndTimer);
+        updateActiveItem();
+    });
     window.addEventListener("resize", () => {
         updateControls();
         updateActiveItem();
