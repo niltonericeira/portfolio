@@ -1186,21 +1186,6 @@ img {
     margin-top: 0;
 }
 
-/* Textos corridos */
-p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* Textos de apresentação e descrições */
-.hero-description,
-.section-intro p,
-.highlight-card p,
-.project-content p,
-.timeline-content p {
-    text-align: justify;
-}
-
 /* Mantém elementos curtos com alinhamento visual */
 .eyebrow,
 .project-category,
@@ -1555,6 +1540,10 @@ body.lightbox-open {
 .site-page .section-intro {
     max-width: 830px;
     margin: 0 auto 48px;
+    text-align: left;
+}
+
+.home-page .section-intro {
     text-align: center;
 }
 
@@ -1575,13 +1564,24 @@ body.lightbox-open {
     letter-spacing: -0.055em;
 }
 
-.site-page .section-intro > p:last-child {
-    max-width: 720px;
-    margin: 22px auto 0;
+.site-page .section-intro > p:not(.eyebrow) {
     color: #6e6e73;
-    font-size: 18px;
-    line-height: 1.55;
+    font-size: 16px;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.site-page .section-intro > p + p {
+    margin-top: 16px;
+}
+
+.home-page .section-intro > p:not(.eyebrow) {
     text-align: center;
+}
+
+.home-page .section-intro > p:last-child {
+    max-width: 720px;
+    margin: 18px auto 0;
     text-align: center;
 }
 
@@ -1860,7 +1860,7 @@ body.lightbox-open {
         gap: 18px;
     }
 
-    .site-page .section-intro > p:last-child {
+    .site-page .section-intro > p:not(.eyebrow) {
         font-size: 16px;
     }
 
